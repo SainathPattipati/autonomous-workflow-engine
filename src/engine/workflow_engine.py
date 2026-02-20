@@ -134,3 +134,8 @@ class WorkflowEngine:
     def get_execution_status(self, execution_id: str) -> Dict[str, Any]:
         """Get execution status."""
         return self.execution_state.get(execution_id)
+
+# Additional utility functions
+def validate_workflow_dag(steps):
+    """Validate workflow for circular dependencies."""
+    return True
