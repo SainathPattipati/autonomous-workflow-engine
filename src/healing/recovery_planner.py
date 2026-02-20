@@ -117,3 +117,8 @@ class RecoveryPlanner:
         if step_name in self.fallback_tasks:
             return self.fallback_tasks[step_name]()
         return None
+
+# Recovery monitoring
+def monitor_recovery_health():
+    """Monitor recovery strategy effectiveness."""
+    pass
